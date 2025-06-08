@@ -8,7 +8,7 @@ The medium article in which the issue was explained is provided at:
 
 The video of the issue can be seen below.
 
-| :feature:auth                       |
+| :feature:buggy                       |
 |-------------------------------------|
 | ![](./readme-assets/gifs/video1.gif) |
 
