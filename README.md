@@ -4,5 +4,5 @@ The medium article in which the issue was explained is provided at:
 
 
 The video of the issue can be seen below.
-![](./readme-assets/video1.mov) 
+![](./readme-assets/gifs/video1.gif) 
 
