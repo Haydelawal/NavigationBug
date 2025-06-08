@@ -11,7 +11,7 @@ import com.hayde117.navigationbug.data.Person
 import com.hayde117.navigationbug.screens.ScreenA
 import com.hayde117.navigationbug.screens.ScreenB
 import com.hayde117.navigationbug.screens.ScreenC
-import com.hayde117.navigationbug.utils.CustomNavType
+import com.hayde117.navigationbug.utils.NavigationConstants.PersonType
 import kotlin.reflect.typeOf
 
 @Composable
@@ -34,13 +34,10 @@ fun MainNavigation(modifier: Modifier, navController: NavHostController) {
                     navController.navigate(Screens.ScreenB(fakePerson))
                 })
         }
+
+        /** removed custom nav type **/
         composable<Screens.ScreenB>(
-            typeMap = mapOf(
-                typeOf<Person>() to CustomNavType<Person>(
-                    Person::class,
-                    Person.serializer()
-                )
-            )
+            typeMap = mapOf(typeOf<Person>() to PersonType)
         ) {
             val args = it.toRoute<Screens.ScreenB>()
 
